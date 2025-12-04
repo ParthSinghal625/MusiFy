@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUSIFY - India's #1 private music player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="sideBar">
+        <h1 id="logo">MUSI<img src="core/music-note.png" id="logoImg">Y</h1>
+        <div id="sideMain">
+          
+          <input type="text" id="searchBar" value="Search">
+
+          <div id="playlistSidePanel">
+            <h2>MY PLAYLIST</h2>
+            <div id="playlistContainer">
+                <div id="playlistElement">
+                <div id="PlLeft">Playlist 1</div>
+                <img src="playlistCovers/demoPL.jpg" alt="">
+              </div>
+              <div id="playlistElement">
+                <div id="PlLeft">Playlist 2</div>
+                <img src="playlistCovers/demoPL.jpg" alt="">
+              </div>
+              <div id="playlistElement">
+                <div id="PlLeft">Playlist 3</div>
+                <img src="playlistCovers/demoPL.jpg" alt="">
+              </div>
+              <div id="playlistElement">
+                <div id="PlLeft">Playlist 4</div>
+                <img src="playlistCovers/demoPL.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+          
+          <h3>Proudly made in <img src="core/india.png"></h3>
+        </div>
+  </div>
+  <div id="mainBody">
+      <div id="mainMenu">
+        <p id="mHeading">WHAT ARE YOU LISTENING?</p>
+        <div id="hTgs">
+          <a href="#myPlaylist">My Playlist</a>
+          <a href="#">Music</a>
+          <a href="#">Podcasts</a>
+          <a href="#" id="specialhTgs">New to Me</a>
+        </div>
+        <div id="myDivs">
+          <p id="mSubH">MY PLAYLIST</p>
+          <div id="playlistSlider">
+            
+          </div>
+        </div>
+        <div id="myDivs">
+          <p id="mSubH">MY MUSIC</p>
+          <div id="songSlider"></div>
+        </div>
+      </div>
+      <div id="player">
+        <div id="controls">
+          <p id="timer">00:00</p>
+          <div id="progressTab">
+            <div id="progBar"></div>
+          </div>
+          <p id="finalTimer">00:00</p>
+          <button id="playBtn" onclick="songPause()"></button>
+          <button id="repeatBtn" onclick="playFromBeginning()"><img src="core/rewind.png" alt="" id="controlBarImg"></button>
+          <button id="skipBtn" onclick="playNext()"><img src="core/forward.png" alt="" id="controlBarImg"></button>
+        </div>
+        <div id="outControlsPanel">
+          <button id="volume" class="outControls" onclick="volume()"><img src="core/volume.png" alt=""></button>
+          <button id="shuffle" class="outControls" onclick="shuffleMode()"><img src="core/shuffle.png" alt="" id="shuffleImg"></button>
+          <button id="lyrics" class="outControls" onclick="lyricsMode()"><img src="core/lyrics.png" alt="" id="lyricsImg"></button>
+        </div>
+      </div>
+      <div id="songImg"></div>
+      <div id="volSlider">
+        <div id="sliderCont">
+          <input type="range" min="0" max="100" value="100" id="sliderVolume">
+        </div>
+      </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,353 @@
+html{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    margin:0px;
+    min-width:400px;
+    min-height:300px;
+    display:flex;
+}
+
+#mainBody{
+    height:100vh;
+    width:82%;
+    position:relative;
+    left:18%;
+    display:flex;
+    justify-content:right;
+}
+
+#sideBar{
+    background-color:rgb(28, 30, 28);
+    width:18%;
+    height:100vh;
+    position:fixed;
+    z-index:1000;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#mainMenu{
+    background-color:rgba(15, 15, 15, 0.986);
+    height:87vh;
+    position:absolute;
+    width:100%;
+    overflow-y:auto;
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+}
+
+#player{
+    background-color:rgb(23, 23, 23);
+    height:13vh;
+    width:100%;
+    position:fixed;
+    top: 87vh;
+    box-shadow:100px 5px 40px blue, 100px 5px 35px red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#songImg{
+    background-color:rgb(0, 0, 0);
+    width:200px;
+    height:200px;
+    position:relative;
+    z-index:1000;
+    top:70vh;
+    margin-right:17px;
+    border-radius:20px;
+    box-shadow:0px 2px 20px blue, 1px -2px 30px red;
+}
+
+#logoImg{
+    width:40px;
+    height:auto;
+}
+
+#logo{
+    display:flex;
+    align-items:center;
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:40px;
+    color:rgb(209, 209, 209);
+}
+
+#sideMain{
+    height:80vh;
+    width:100%;
+    color:white;
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+}
+
+#sideMain img{
+    width:50px;
+}
+
+#mHeading{
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:50px;
+    color:rgb(209, 209, 209);
+    text-align:center;
+}
+
+#controls{
+    width:600px;
+    height:70%;
+    background-color:rgba(75, 75, 75, 0.666);
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    color:rgb(213, 213, 213);
+    font-family:sans-serif;
+    margin-right:75px;
+    padding:0px 5px;
+}
+
+#controls button{
+    background-color:rgba(184, 184, 184, 0.163);
+    width:50px;
+    height:50px;
+    margin: 2px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#controlBarImg{
+    width:30px;
+}
+
+#progressTab{
+    padding:0px;
+    margin:0px 5px;
+    background-color:rgb(101, 100, 100);
+    width:300px;
+    height:4px;
+    border-radius:2px;
+    position:relative;
+}
+
+#progBar{
+    width:0%;
+    height:100%;
+    border-radius:2px;
+    background:linear-gradient(90deg, rgba(43,74,120,255), rgba(230,98,251,255));
+    transition: width 0.1s linear;
+}
+
+#hTgs{
+    background-color:rgba(75, 75, 75, 0.233);
+    width:510px;
+    height: auto;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#hTgs a{
+    width:120px;
+    height:35px;
+    background-color:rgba(74, 74, 74, 0.584);
+    border-radius:20px;
+    margin:6px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    font-family:sans-serif;
+    font-size:18px;
+}
+
+#specialhTgs{
+    box-shadow:0px 0px 60px rgb(255, 0, 102);
+    font-weight:bold;
+}
+
+#specialhTgs:hover{
+    box-shadow:0px 0px 60px rgb(30, 0, 255);
+    background-color:white;
+    color:black;
+    transition:0.3s ease-in;
+}
+
+#myDivs{
+    display:flex;
+    width:100%;
+    flex-flow:column;
+}
+
+#mSubH{
+    font-family:sans-serif;
+    font-weight:bold;
+    font-size:35px;
+    margin-left:20px;
+    color:rgb(209, 209, 209);
+}
+
+#song{
+    background-color:rgba(50, 50, 50, 0.411);
+    height:39px;
+    margin:10px 20px;
+    border-radius:10px; 
+    overflow-x:hidden;
+    font-family:sans-serif;
+    text-align:center;
+    display:flex;
+    padding:0px 20px;
+    align-items:center;
+    font-size:18px;
+    color:white;
+}
+
+#song:hover{
+    background-color:rgba(192, 192, 192, 0.756);
+    transition:ease-in 0.3s;
+    cursor:pointer;
+    color:rgba(126, 3, 131, 0.784);
+    font-weight:bold;
+}
+
+.outControls{
+    margin-left:7px;
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+}
+
+.outControls img{
+    width:30px;
+}
+
+#outControlsPanel{
+    width:270px;
+    display:flex;
+    justify-content:right;
+}
+
+#volSlider{
+    background-color:rgb(45, 45, 45);
+    border:1px solid rgba(55, 55, 55, 0.363);
+    border-radius:10px;
+    height:50px;
+    width:250px;
+    position:absolute;
+    z-index:1000;
+    top:82vh;
+    left:45vw;
+    display:none;
+}
+
+#sliderCont{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#sliderVolume {
+    -webkit-appearance: none;
+    width:80%;
+    height:40%;
+    background:linear-gradient(90deg, rgb(199, 29, 255) 0%,  rgb(199, 29, 255) 100%, rgb(82, 82, 82) 100%, rgb(82, 82, 82) 100%);
+    border-radius:5px;
+}
+
+#sliderVolume::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width: 20px;
+    height:20px;
+    background-color:rgb(169, 169, 169);
+    border-radius:2px;
+}
+
+#playlistSidePanel{
+    background-color:rgb(21, 21, 21);
+    width:90%;
+    height: 470px;
+    border-radius:15px;
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    font-family:sans-serif;
+    color:rgb(209, 209, 209);
+    overflow-y:hidden;
+}
+
+#searchBar{
+    background-color:rgb(45, 45, 45);
+    width:80%;
+    height:50px;
+    border-radius:30px;
+    margin-bottom:15px;
+    border:none;
+    color:rgb(175, 175, 175);
+    font-family:sans-serif;
+    font-size:20px;
+    padding:0px 10px;
+}
+
+#playlistElement{
+    background: linear-gradient(90deg, rgba(79, 79, 79, 0.426) 50%, rgb(75, 21, 53));
+    width:210px;
+    height:50px;
+    border-radius:10px;
+    display:flex;
+    margin-bottom:8px;
+    color:rgb(175, 175, 175);
+    font-family:sans-serif;
+}
+
+#PlLeft{
+    width:72%;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    padding:10px;
+    font-weight:bold;
+}
+
+#playlistElement img{
+    width:50px;
+    border-radius:10px
+}
+
+#playlistSlider{
+    padding:10px 50px;
+    display:grid;
+    grid-template-columns:280px 280px 280px 280px;
+    justify-content:right;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{}
+
+::-webkit-scrollbar-thumb{
+    background:rgba(193, 193, 193, 0.252);
+    border-radius:10px;
+    transition:0.4s ease-in;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:rgba(158, 158, 158, 0.647);
+}
