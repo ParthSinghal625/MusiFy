@@ -1,8 +1,50 @@
 [
     {
         "id": "1",
-        "name": "Sample Audio",
+        "name": "Kate Bush - Running Up That Hill!",
+        "audioFile": "musicBin/KateBush.mp3",
+        "songCover": "songCovers/song1.jpeg"
+    },
+    {
+        "id": "2",
+        "name": "Ambience Music",
+        "audioFile": "musicBin/ambient-design-179116.mp3",
+        "songCover": "songCovers/song2.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Testing Grounds [Quite Literally]",
         "audioFile": "musicBin/beautiful-loop-253269.mp3",
         "songCover": "songCovers/song3.png"
+    },
+    {
+        "id": "4",
+        "name": "Brian Tyler - F1 Theme",
+        "audioFile": "musicBin/F1theme.mp3",
+        "songCover": "songCovers/song4.jpg"
+    },
+    {
+        "id": "5",
+        "name": "Sabrina Carpenter - Juno",
+        "audioFile": "musicBin/Sabrina Carpenter - Juno (Official Lyric Video).mp3",
+        "songCover": "songCovers/song5.png"
+    },
+    {
+        "id": "6",
+        "name": "Carte Blanq - 33 Max Verstappen (Champions Mix) (Extended Mix)",
+        "audioFile": "musicBin/33 Max Verstappen (Champions Mix) (Extended Mix).mp3",
+        "songCover": "songCovers/song6.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Death Note (Opening 1)",
+        "audioFile": "musicBin/Death Note Op 1 Lyrics.mp3",
+        "songCover": "songCovers/song7.jpg"
+    },
+    {
+        "id": "8",
+        "name": "Blue Roses - Ropongi Carillon",
+        "audioFile": "musicBin/Blue Roses - Roppongi Carillon (Extended mix) [Lyrics and Visualizer].mp3",
+        "songCover": "songCovers/song8.png"
     }
 ]
